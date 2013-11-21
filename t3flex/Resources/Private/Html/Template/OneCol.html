@@ -1,0 +1,31 @@
+<f:layout name="Default" />
+<f:section name="Main">
+
+	<div id="t3flex-left"   data-role="panel" data-position="left" data-theme="{settings.data-theme.left-panel}">
+		<f:if condition="{settings.leftPanelType} == 1">
+			<f:then>
+				<f:cObject typoscriptObjectPath="plugin.tx_t3flex.mainNav" />
+			</f:then>
+			<f:else>
+				<f:cObject typoscriptObjectPath="lib.contentLeft" />
+			</f:else>
+		</f:if>
+	</div>
+
+	<div id="t3flex-right"   data-role="panel" data-position="right" data-theme="{settings.data-theme.right-panel}">
+		<f:if condition="{settings.rightPanelType} == 1">
+			<f:then>
+				<f:cObject typoscriptObjectPath="plugin.tx_t3flex.mainNav" />
+			</f:then>
+			<f:else>
+				<f:cObject typoscriptObjectPath="lib.contentRight" />
+			</f:else>
+		</f:if>
+	</div>
+
+	<div id="t3flex-center" data-role="content" data-theme="{settings.data-theme.center}">
+		<f:cObject typoscriptObjectPath="lib.contentCenter" />
+	</div> 
+
+
+</f:section>

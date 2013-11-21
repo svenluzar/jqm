@@ -1,0 +1,49 @@
+{namespace flex=TYPO3\T3flex\ViewHelpers}
+<div id="headerContent" data-role="header" data-theme="a">
+
+	<flex:switch expression="{settings.leftPanelType}">
+	  <flex:case case="1">
+	 	<a href="#t3flex-left" data-icon="bars" data-iconpos="notext">Left</a>
+	  </flex:case>
+	  <flex:case case="2">
+		<f:cObject typoscriptObjectPath="plugin.tx_t3flex.backButton" />
+	  </flex:case>
+	  <flex:case case="3">
+		<a href="{f:uri.page(pageUid:settings.leftPanelTargetPid)}" data-icon="bars" data-iconpos="notext" data-transition="pop">Pid</a>
+	  </flex:case>
+	  <flex:case case="4">
+	 	<a href="#t3flex-left" data-icon="bars" data-iconpos="notext">Left</a>
+	  </flex:case>
+	  <flex:case case="default">
+	 	<a href="#t3flex-left" data-icon="bars" data-iconpos="notext">Left</a>
+	  </flex:case>
+	</flex:switch>
+
+	<f:if condition="{settings.pageTitleType} == 1">
+		<h1>{data.title}</h1>
+	</f:if>
+	<f:if condition="{settings.pageTitleType} == 2">
+		<h1>
+			<f:format.html>{settings.pageTitle}</f:format.html>
+		</h1>
+	</f:if>
+
+	<flex:switch expression="{settings.rightPanelType}">
+	  <flex:case case="1">
+		<a href="#t3flex-right" data-icon="bars" data-iconpos="notext">Right</a>
+	  </flex:case>
+	  <flex:case case="2">
+		<f:cObject typoscriptObjectPath="plugin.tx_t3flex.backButton" />
+	  </flex:case>
+	  <flex:case case="3">
+		<a href="{f:uri.page(pageUid:settings.rightPanelTargetPid)}" data-icon="bars" data-iconpos="notext" data-transition="pop">Pid</a>
+	  </flex:case>
+	  <flex:case case="4">
+	 	<a href="#t3flex-right" data-icon="bars" data-iconpos="notext">Right</a>
+	  </flex:case>
+	  <flex:case case="default">
+		<a href="#t3flex-right" data-icon="bars" data-iconpos="notext">Right</a>
+	  </flex:case>
+	</flex:switch>
+
+</div>

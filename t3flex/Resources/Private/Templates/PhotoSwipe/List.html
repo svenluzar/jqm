@@ -1,0 +1,18 @@
+<f:layout name="default" />
+<f:section name="main">
+
+<ul id="tx-t3flex-gallery" class="gallery">
+<f:for each="{psImages}" as="psImage">
+	<f:render partial="PhotoSwipe/List" arguments="{psImage : psImage}" />
+</f:for>	
+</ul>
+
+<script type="text/javascript">
+	<![CDATA[$(document).ready(function(){]]>
+		
+		var myPhotoSwipe = $("#tx-t3flex-gallery a").photoSwipe({ enableMouseWheel: false , enableKeyboard: false });
+		
+	<![CDATA[});]]>
+</script>
+
+</f:section>

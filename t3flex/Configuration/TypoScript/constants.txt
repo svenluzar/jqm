@@ -1,0 +1,101 @@
+
+###
+# This are the default TS-constants for t3flex
+##
+
+plugin.tx_t3flex {
+
+	icon {
+	
+		# cat=T3Flex/file/icon/1; type=string; label=Apple Touch icon file default (PNG)
+		apple-touch-icon-default = typo3conf/ext/t3flex/Resources/Public/Icons/jquery-mobile-logo-512.png
+		
+		# cat=T3Flex/file/icon/2; type=string; label=Apple Touch icon file 57px (PNG)
+		apple-touch-icon-57 = typo3conf/ext/t3flex/Resources/Public/Icons/jquery-mobile-logo-57.png
+
+		# cat=T3Flex/file/icon/3; type=string; label=Apple Touch icon file 72px (PNG)
+		apple-touch-icon-72 = typo3conf/ext/t3flex/Resources/Public/Icons/jquery-mobile-logo-72.png
+
+		# cat=T3Flex/file/icon/4; type=string; label=Apple Touch icon file 76px (PNG)
+		apple-touch-icon-76 = typo3conf/ext/t3flex/Resources/Public/Icons/jquery-mobile-logo-76.png
+
+		# cat=T3Flex/file/icon/5; type=string; label=Apple Touch icon file 114px (PNG)
+		apple-touch-icon-114 = typo3conf/ext/t3flex/Resources/Public/Icons/jquery-mobile-logo-114.png
+
+		# cat=T3Flex/file/icon/6; type=string; label=Apple Touch icon file 120px (PNG)
+		apple-touch-icon-120 = typo3conf/ext/t3flex/Resources/Public/Icons/jquery-mobile-logo-120.png
+
+		# cat=T3Flex/file/icon/7; type=string; label=Apple Touch icon file 144px (PNG)
+		apple-touch-icon-144 = typo3conf/ext/t3flex/Resources/Public/Icons/jquery-mobile-logo-144.png
+
+		# cat=T3Flex/file/icon/8; type=string; label=Apple Touch icon file 152px (PNG)
+		apple-touch-icon-152 = typo3conf/ext/t3flex/Resources/Public/Icons/jquery-mobile-logo-152.png
+	}
+	
+	image {
+	
+		# cat=T3Flex/file/image/1; type=string; label=1536x2008px Launch image iOS 6 & 7 iPad (retina, portrait) (PNG)
+		apple-touch-startup-image-1536x2008 = typo3conf/ext/t3flex/Resources/Public/Img/apple-touch-startup-image-1536x2008.png
+		
+		# cat=T3Flex/file/image/1; type=string; label=2048x1496px Launch image iOS 6 & 7 iPad (retina, landscape) (PNG)
+		apple-touch-startup-image-2048x1496 = typo3conf/ext/t3flex/Resources/Public/Img/apple-touch-startup-image-2048x1496.png
+		
+		# cat=T3Flex/file/image/1; type=string; label=768x1004px Launch image iOS 6 iPad (portrait) (PNG)
+		apple-touch-startup-image-768x1004 = typo3conf/ext/t3flex/Resources/Public/Img/apple-touch-startup-image-768x1004.png
+		
+		# cat=T3Flex/file/image/1; type=string; label=1024x748px Launch image iOS 6 iPad (landscape) (PNG)
+		apple-touch-startup-image-1024x748 = typo3conf/ext/t3flex/Resources/Public/Img/apple-touch-startup-image-1024x748.png
+		
+		# cat=T3Flex/file/image/1; type=string; label=640x1096px Launch image iOS 6 & 7 iPhone 5 (PNG)
+		apple-touch-startup-image-640x1096 = typo3conf/ext/t3flex/Resources/Public/Img/apple-touch-startup-image-640x1096.png
+		
+		# cat=T3Flex/file/image/1; type=string; label=640x920px Launch image iOS 6 & 7 iPhone (retina) (PNG)
+		apple-touch-startup-image-640x920 = typo3conf/ext/t3flex/Resources/Public/Img/apple-touch-startup-image-640x920.png
+		
+		# cat=T3Flex/file/image/1; type=string; label=320x460px Launch image iOS 6 iPhone (PNG)
+		apple-touch-startup-image-320x460 = typo3conf/ext/t3flex/Resources/Public/Img/apple-touch-startup-image-320x460.png
+		
+		# cat=T3Flex/file/image/1; type=string; label=320x480px Launch image default (PNG)
+		apple-touch-startup-image = typo3conf/ext/t3flex/Resources/Public/Img/apple-touch-startup-image.png
+	}
+
+	# cat=T3Flex/file/css/1; type=string; label=T3Flex Themeroller css file
+	jQueryCustomCss = EXT:t3flex/Resources/Public/t3flexThemeroller/themes/t3flex.min.css
+
+	
+	settings {
+		data-theme {
+		
+			# cat=T3Flex/color/1; type=string; label=Theme for page
+			page = a
+	
+			# cat=T3Flex/color/1; type=string; label=Theme for right panel
+			right-panel = b
+	
+			# cat=T3Flex/color/1; type=string; label=Theme for left panel
+			left-panel = b
+	
+			# cat=T3Flex/color/1; type=string; label=Theme for center area
+			center = a
+		}
+
+		# cat=T3Flex/typo/pagetitle1; type=int+; label=type of title (1=title from typoscript, 2=title from DB)
+		pageTitleType = 1
+		
+		# cat=T3Flex/typo/pagetitle2; type=string; label=page title 
+		pageTitle = 
+		
+		# cat=T3Flex/typo/leftColumn; type=int+; label=left column type (1 = menu sitemap on toplevel, 2 = back button, 3 = link to pid, 4 = left col to slide in, default = tt_content from DB) 
+		leftPanelType = 1
+		
+		# cat=T3Flex/typo/leftColumn; type=int+; label=left button target pid 
+		leftPanelTargetPid =
+	
+		# cat=T3Flex/typo/rightColumn; type=int+; label=right column type (1 = menu sitemap on toplevel, 2 = back button, 3 = link to pid, 4 = right col to slide in, default = tt_content from DB) 
+		rightPanelType =
+
+		# cat=T3Flex/typo/rightColumn; type=int+; label=right button target pid 
+		rightPanelTargetPid =
+	} 
+}
+

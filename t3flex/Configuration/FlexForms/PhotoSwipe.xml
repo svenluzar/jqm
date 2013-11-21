@@ -1,0 +1,26 @@
+<T3DataStructure>
+	<meta type="array">
+		<langDisable>1</langDisable>
+	</meta>
+	<sheets>
+		<main>
+			<ROOT>
+				<TCEforms>
+					<sheetTitle>Plugin Configuration</sheetTitle>
+				</TCEforms>
+				<type>array</type>
+				<el>
+					<settings.imageFolder>
+                        <TCEforms>
+                            <label>Image folder</label>
+                            <config>
+								<type>input</type>
+          						<size>255</size>
+							</config>
+                        </TCEforms>
+                    </settings.imageFolder>
+				</el>
+			</ROOT>
+		</main>
+	</sheets>
+</T3DataStructure>
