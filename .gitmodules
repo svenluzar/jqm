@@ -1,0 +1,3 @@
+[submodule "t3flexTYPO3CMS/TYPO3.CMS"]
+	path = t3flexTYPO3CMS/TYPO3.CMS
+	url = git@github.com:TYPO3/TYPO3.CMS.git
