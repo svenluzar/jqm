@@ -139,6 +139,10 @@ lib.contentCenter 	< styles.content.get
 lib.contentRight 	< styles.content.getRight
 lib.contentLeft 	< styles.content.getLeft
 
+
+lib.contentFooter		= TEXT
+lib.contentFooter.value = Set the Footer in Typoscript
+
 page.10 = FLUIDTEMPLATE
 page.10 {
 	file 				= EXT:t3flex/Resources/Private/Html/Template/OneCol.html
@@ -152,6 +156,7 @@ page.10 {
 		rightPanelTargetPid	= {$plugin.tx_t3flex.settings.rightPanelTargetPid}
 		pageTitleType 		= {$plugin.tx_t3flex.settings.pageTitleType}
 		pageTitle 			= {$plugin.tx_t3flex.settings.pageTitle}
+		
 		data-theme {
 			page 			= {$plugin.tx_t3flex.settings.data-theme.page}
 			left-panel		= {$plugin.tx_t3flex.settings.data-theme.left-panel}
