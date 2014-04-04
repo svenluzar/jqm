@@ -1,0 +1,11 @@
+{namespace flex=TYPO3\T3flex\ViewHelpers}
+
+<f:if condition="{settings.footerEnabled}">
+<div id="t3flex-footer" 
+	 data-role="footer" 
+	 data-theme="{settings.data-theme.footer}" 
+	 data-position="fixed" 
+	 data-tap-toggle="false">
+	<f:cObject typoscriptObjectPath="lib.contentFooter" />
+</div>
+</f:if>

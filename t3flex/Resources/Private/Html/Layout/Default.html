@@ -1,8 +1,9 @@
-<div id="t3flex-wrapper"   data-role="page"  data-theme="{settings.data-theme.page}">
+<div id="t3flex-wrapper" class="{settings.pageClass}"   data-role="page"  data-theme="{settings.data-theme.page}">
 
     <f:render partial="Header"  arguments="{_all}"/>
 
     <f:render section="Main"/>
-    <!-- f:render partial="Footer" /-->
+
+    <f:render partial="Footer"  arguments="{_all}"/>
 
 </div>

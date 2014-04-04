@@ -156,13 +156,25 @@ page.10 {
 		rightPanelTargetPid	= {$plugin.tx_t3flex.settings.rightPanelTargetPid}
 		pageTitleType 		= {$plugin.tx_t3flex.settings.pageTitleType}
 		pageTitle 			= {$plugin.tx_t3flex.settings.pageTitle}
+
+		headerEnabled		= {$plugin.tx_t3flex.settings.headerEnabled}
+		footerEnabled		= {$plugin.tx_t3flex.settings.footerEnabled}
+		pageClass			= {$plugin.tx_t3flex.settings.pageClass}
 		
 		data-theme {
 			page 			= {$plugin.tx_t3flex.settings.data-theme.page}
 			left-panel		= {$plugin.tx_t3flex.settings.data-theme.left-panel}
 			right-panel		= {$plugin.tx_t3flex.settings.data-theme.right-panel}
 			center			= {$plugin.tx_t3flex.settings.data-theme.center}
+			header			= {$plugin.tx_t3flex.settings.data-theme.header}
+			footer			= {$plugin.tx_t3flex.settings.data-theme.footer}
 		}
+		
+		data-icon {
+			headerLeft		= {$plugin.tx_t3flex.settings.data-icon.headerLeft}
+			headerRight		= {$plugin.tx_t3flex.settings.data-icon.headerRight}
+		}
+		
 		treeLevel			= treeLevel
 	}
 

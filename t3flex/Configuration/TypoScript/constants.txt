@@ -77,6 +77,20 @@ plugin.tx_t3flex {
 	
 			# cat=T3Flex/color/1; type=string; label=Theme for center area
 			center = a
+			
+			# cat=T3Flex/color/1; type=string; label=Theme for header area
+			header = a
+			
+			# cat=T3Flex/color/1; type=string; label=Theme for footer area
+			footer = a
+		}
+		
+		data-icon {
+			# cat=T3Flex/typo/headerLeft; type=string; label=name of data-icon for top left button
+			headerLeft = bars
+			
+			# cat=T3Flex/typo/headerRight; type=string; label=name of data-icon for top left button
+			headerRight = bars
 		}
 
 		# cat=T3Flex/typo/pagetitle1; type=int+; label=type of title (1=title from typoscript, 2=title from DB)
@@ -96,6 +110,15 @@ plugin.tx_t3flex {
 
 		# cat=T3Flex/typo/rightColumn; type=int+; label=right button target pid 
 		rightPanelTargetPid =
+		
+		# cat=T3Flex/typo/footerEnabled; type=int+; label=footer available (1 = yes, 0 = no)
+		footerEnabled = 1
+
+		# cat=T3Flex/typo/footerEnabled; type=int+; label=header available (1 = yes, 0 = no)
+		headerEnabled = 1
+		
+		# cat=T3Flex/typo/pageClass; type=string; label=CSS Style for the main page
+		pageClass = 
 	} 
 }
 
