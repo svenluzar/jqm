@@ -30,6 +30,9 @@
 				<f:format.html>{settings.pageTitle}</f:format.html>
 			</h1>
 		</f:if>
+		<f:if condition="{settings.pageTitleType} == 3">
+			<input type="search" name="title-search" id="title-search" value="" data-mini="true" />
+		</f:if>
 	
 		<flex:switch expression="{settings.rightPanelType}">
 		  <flex:case case="1">
