@@ -1,6 +1,6 @@
 <project name="T3flex" default="compile" basedir=".">
     <description>
-        Copies files to T3flex server
+        Copies files to t3flex server
     </description>
   <!-- set global properties for this build -->
   <property name="src" location="src"/>
