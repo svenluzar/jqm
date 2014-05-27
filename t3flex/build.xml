@@ -1,0 +1,46 @@
+<project name="Upps" default="compile" basedir=".">
+    <description>
+        Copies files to upps server
+    </description>
+  <!-- set global properties for this build -->
+  <property name="src" location="src"/>
+  <property name="build" location="build"/>
+  <property name="dist"  location="dist"/>
+
+  <target name="compile">
+  	<scp 
+       todir="${t3flex_username}@${t3flex_server}" 
+       keyfile="${sshkeyfile}"
+       verbose="true"
+       trust="yes"
+  	>
+  	  <fileset dir=".">
+   		<patternset id="non.test.sources">
+    		<include name="**/*.php"/>
+    		<include name="**/*.jpg"/>
+    		<include name="**/*.gif"/>
+    		<include name="**/*.png"/>
+    		<include name="**/*.xml"/>
+    		<include name="**/*.txt"/>
+    		<include name="**/*.TTF"/>
+    		<include name="**/*.js"/>
+    		<include name="**/*.sql"/>
+    		<include name="**/*.py"/>
+    		<include name="**/*.css"/>
+    		<include name="**/*.svg"/>
+    		<include name="**/*.html"/>
+    		<include name="**/*.tmpl"/>
+   			<include name="**/*.map"/>
+   			<include name="**/*.csv"/>
+   			<include name="**/*.ovf"/>
+   			<include name="**/*.rst"/>
+   			<include name="**/*.xlf"/>
+		    <exclude name="localdev.cache"/>
+  		</patternset> 	  
+	    <modified>
+	      <param name="cache.cachefile" value="localdev.cache"/>
+	    </modified>
+	  </fileset>
+	</scp>
+  </target>
+</project>
