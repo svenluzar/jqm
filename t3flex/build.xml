@@ -1,6 +1,6 @@
-<project name="Upps" default="compile" basedir=".">
+<project name="T3flex" default="compile" basedir=".">
     <description>
-        Copies files to upps server
+        Copies files to T3flex server
     </description>
   <!-- set global properties for this build -->
   <property name="src" location="src"/>
