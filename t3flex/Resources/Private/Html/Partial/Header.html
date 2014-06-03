@@ -36,19 +36,19 @@
 	
 		<flex:switch expression="{settings.rightPanelType}">
 		  <flex:case case="1">
-			<a href="#t3flex-right" data-icon="{settings.data-icon.headerRight}" data-iconpos="notext">Right</a>
+			<a href="#t3flex-right" data-icon="{settings.data-icon.headerRight}" data-iconpos="notext" class="ui-btn-right">Right</a>
 		  </flex:case>
 		  <flex:case case="2">
 			<f:cObject typoscriptObjectPath="plugin.tx_t3flex.backButton" />
 		  </flex:case>
 		  <flex:case case="3">
-			<a href="{f:uri.page(pageUid:settings.rightPanelTargetPid)}" data-icon="{settings.data-icon.headerRight}" data-iconpos="notext" data-transition="pop">Pid</a>
+			<a href="{f:uri.page(pageUid:settings.rightPanelTargetPid)}" data-icon="{settings.data-icon.headerRight}" data-iconpos="notext" data-transition="pop" class="ui-btn-right">Pid</a>
 		  </flex:case>
 		  <flex:case case="4">
-		 	<a href="#t3flex-right" data-icon="{settings.data-icon.headerRight}" data-iconpos="notext">Right</a>
+		 	<a href="#t3flex-right" data-icon="{settings.data-icon.headerRight}" data-iconpos="notext" class="ui-btn-right">Right</a>
 		  </flex:case>
 		  <flex:case case="default">
-			<a href="#t3flex-right" data-icon="{settings.data-icon.headerRight}" data-iconpos="notext">Right</a>
+			<a href="#t3flex-right" data-icon="{settings.data-icon.headerRight}" data-iconpos="notext" class="ui-btn-right">Right</a>
 		  </flex:case>
 		</flex:switch>
 	</div>
