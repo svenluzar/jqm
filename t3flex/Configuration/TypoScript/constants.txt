@@ -99,7 +99,7 @@ plugin.tx_t3flex {
 		# cat=T3Flex/typo/pagetitle2; type=string; label=page title 
 		pageTitle = 
 		
-		# cat=T3Flex/typo/leftColumn; type=int+; label=left column type (1 = menu sitemap on toplevel, 2 = back button, 3 = link to pid, 4 = left col to slide in, default = tt_content from DB) 
+		# cat=T3Flex/typo/leftColumn; type=int+; label=left column type (1 = menu sitemap on toplevel, 2 = back button, 3 = link to pid, 4 = left col to slide in, 5 = back button to pid, default = tt_content from DB) 
 		leftPanelType = 1
 		
 		# cat=T3Flex/typo/leftColumn; type=int+; label=left button target pid 

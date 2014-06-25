@@ -5,23 +5,27 @@
 	<div id="headerContent" data-role="header" data-theme="{settings.data-theme.header}" data-position="fixed" data-tap-toggle="false">
 	
 		<flex:switch expression="{settings.leftPanelType}">
-		  <flex:case case="1">
-		 	<a href="#t3flex-left" data-icon="{settings.data-icon.headerLeft}" data-iconpos="notext">Left</a>
-		  </flex:case>
-		  <flex:case case="2">
-			<f:cObject typoscriptObjectPath="plugin.tx_t3flex.backButton" />
-		  </flex:case>
-		  <flex:case case="3">
-			<a href="{f:uri.page(pageUid:settings.leftPanelTargetPid)}" data-icon="{settings.data-icon.headerLeft}" data-icon="back">Zurück</a>
-		  </flex:case>
-		  <flex:case case="4">
-			<a href="{f:uri.page(pageUid:settings.leftPanelTargetPid)}" data-icon="{settings.data-icon.headerLeft}" data-iconpos="notext" data-transition="pop">Pid</a>
-		  </flex:case>
-		  <flex:case case="default">
-		 	<a href="#t3flex-left" data-icon="{settings.data-icon.headerLeft}" data-iconpos="notext">Left</a>
-		  </flex:case>
+			<flex:case case="1">
+				<a href="#t3flex-left" data-icon="{settings.data-icon.headerLeft}" data-iconpos="notext">Left</a>
+			</flex:case>
+			<flex:case case="2">
+				<f:cObject typoscriptObjectPath="plugin.tx_t3flex.backButton" />
+			</flex:case>
+			<flex:case case="3">
+				<a href="{f:uri.page(pageUid:settings.leftPanelTargetPid)}" data-icon="{settings.data-icon.headerLeft}" data-iconpos="notext" data-transition="pop">Pid</a>
+			</flex:case>
+			<flex:case case="4">
+				<a href="#t3flex-left" data-icon="{settings.data-icon.headerLeft}" data-iconpos="notext">Left</a>
+			</flex:case>
+			 <flex:case case="5">
+				<a href="{f:uri.page(pageUid:settings.leftPanelTargetPid)}" data-icon="{settings.data-icon.headerLeft}" data-icon="back">Zurück</a>
+			  </flex:case>
+			<flex:case case="default">
+				<a href="#t3flex-left" data-icon="{settings.data-icon.headerLeft}" data-iconpos="notext">Left</a>
+			</flex:case>
 		</flex:switch>
-	
+
+
 		<f:if condition="{settings.pageTitleType} == 1">
 			<h1>{data.title}</h1>
 		</f:if>
