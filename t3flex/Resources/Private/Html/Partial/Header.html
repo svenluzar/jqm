@@ -37,6 +37,11 @@
 		<f:if condition="{settings.pageTitleType} == 3">
 			<input type="search" name="title-search" id="title-search" value="" data-mini="true" />
 		</f:if>
+		<f:if condition="{settings.pageTitleType} == 4">
+			<h1>
+				<f:cObject typoscriptObjectPath="page.10.settings.pageTitle" />
+			</h1>
+		</f:if>
 	
 		<flex:switch expression="{settings.rightPanelType}">
 		  <flex:case case="1">
