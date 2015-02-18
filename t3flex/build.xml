@@ -10,7 +10,7 @@
   <target name="compile">
   	<scp 
        todir="${t3flex_username}@${t3flex_server}" 
-       keyfile="${sshkeyfile}"
+       keyfile="${sshKeyFile}"
        verbose="true"
        trust="yes"
   	>
