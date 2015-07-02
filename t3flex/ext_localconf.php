@@ -17,7 +17,7 @@ if (!defined('TYPO3_MODE')) {
 
 		),
 		// change list plugin to a content element 
-		Tx_Extbase_Utility_Extension::PLUGIN_TYPE_CONTENT_ELEMENT
+		\TYPO3\CMS\Extbase\Utility\ExtensionUtility::PLUGIN_TYPE_CONTENT_ELEMENT
 );
 
 
